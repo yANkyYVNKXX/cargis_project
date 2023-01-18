@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  border-radius: 300px;
+  border: 1px solid var(--border-default);
+  padding: 8px 20px;
+  align-items: center;
+  flex: 1;
+
+  .search_type {
+    display: flex;
+    flex-direction: row;
+    gap: 9px;
+    justify-content: space-around;
+    padding-right: 16px;
+    align-items: center;
+    border-right: 1px solid var(--border-default);
+  }
+
+  .search_input:active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+  }
+}

@@ -1,0 +1,30 @@
+@import 'src/styles/config/mixins';
+@import 'src/styles/config/breakpoints';
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 80px;
+  gap: 24px;
+  flex-wrap: wrap;
+  padding: 28px 27px 41px 28px;
+  background: var(--secondary-background);
+  height: calc(100vh - 186px);
+  overflow: auto;
+
+  .order {
+    max-height: 80px;
+
+    a {
+      text-decoration: none;
+    }
+  }
+
+  @include mqMax($lg) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.preloader_container {
+  height: calc(100vh - 186px);
+}

@@ -1,0 +1,47 @@
+.container {
+  cursor: pointer;
+  position: relative;
+  height: 20px;
+
+  .select {
+    width: fit-content;
+    overflow: hidden;
+    white-space: nowrap;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    background: var(--primary-background);
+
+    .show_element {
+      display: flex;
+      gap: 5px;
+
+      .mark {
+        margin-top: 7px;
+      }
+
+      .mark_open {
+        transform: rotate(180deg);
+      }
+    }
+
+    .variable {
+      display: grid;
+      min-height: 30px;
+      font-size: 13px;
+      line-height: 20px;
+      color: var(--text-color-primary)
+    }
+  }
+
+  .select_open {
+    height: fit-content;
+    animation: open_select 0.2s ease-in;
+
+    .variable:hover {
+      color: var(--text-color-secondary)
+    }
+  }
+}
+
+

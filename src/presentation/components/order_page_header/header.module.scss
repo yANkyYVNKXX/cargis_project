@@ -1,0 +1,48 @@
+.container {
+  padding: 24px 20px;
+  border-bottom: 1px solid var(--border-default);
+  display: flex;
+  justify-content: space-between;
+
+  .header_info {
+    display: flex;
+    gap: 16px;
+
+    .back {
+      background: transparent;
+      display: grid;
+      place-content: center;
+      width: 32px;
+      height: 32px;
+      border: 1px solid var(--border-default);
+      border-radius: 40px;
+      cursor: pointer;
+    }
+  }
+
+  .header_buttons {
+    display: flex;
+    height: 40px;
+    gap: 8px;
+
+    .flight_button {
+      width: 172px;
+      height: 100%;
+      border: 1px solid var(--border-default);
+      border-radius: 44px;
+    }
+
+    .edit_button {
+      width: 44px;
+      height: 100%;
+      border: 1px solid var(--border-default);
+      border-radius: 44px;
+    }
+  }
+}
+
+
+.order_override {
+  padding: 0;
+  cursor: default;
+}

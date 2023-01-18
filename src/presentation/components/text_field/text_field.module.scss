@@ -1,0 +1,14 @@
+.text_field {
+  width: 100%;
+  border: none;
+  padding: 0 16px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.text_field::placeholder {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+}
