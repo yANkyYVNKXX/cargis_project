@@ -1,3 +1,5 @@
+import {useNavigate} from 'react-router-dom';
+
 import {Order} from 'presentation/components/orders_content/order';
 
 import back from 'assets/images/icons/back.svg';
@@ -9,7 +11,9 @@ type Props = {
 };
 
 export const OrderPageHeader = ({order}: Props) => {
-  const handleBackPage = () => globalThis.history.back();
+  const navigate = useNavigate();
+
+  const handleBackPage = () => navigate(-1);
 
   return (
     <div className={styles.container}>
