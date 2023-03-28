@@ -17,7 +17,6 @@ function App() {
 
                   <label htmlFor="card-holder-name">Имя владельца карты:</label>
                   <input type="text" id="card-holder-name" name="cardholdername" autoComplete="cc-name" required/>
-          <label htmlFor="expire-date-month">Expiration Date:</label>
           <input
               type="text"
               name="expire-date-month"
@@ -25,7 +24,6 @@ function App() {
               autoComplete="cc-exp-month"
               placeholder="MM"
           />
-          <label htmlFor="expire-date-year">Expiration Date:</label>
           <input
               type="text"
               name="expire-date-year"
