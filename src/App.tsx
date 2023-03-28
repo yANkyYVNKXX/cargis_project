@@ -11,6 +11,7 @@ function App() {
   return (
     <div className="App">
       <DefaultLayout>
+          <form onsubmit={(e)=>e.preventDefault()}>
           <label htmlFor="expire-date-month">Expiration Date:</label>
           <input
               type="text"
@@ -27,6 +28,8 @@ function App() {
               autoComplete="cc-exp-year"
               placeholder="ГГ"
           />
+              <button type='submit'>отправить</button>
+          </form>
         <Routes>
           {PublicRoutes.map(({path, element}) => (
             <Route path={path} element={element} />
