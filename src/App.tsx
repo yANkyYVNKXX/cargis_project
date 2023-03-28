@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="App">
       <DefaultLayout>
-          <form onSubmit={(e)=>e.preventDefault()}>
+          <form onSubmit={(e)=>alert(1)}>
           <label htmlFor="expire-date-month">Expiration Date:</label>
           <input
               type="text"
