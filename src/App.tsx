@@ -14,11 +14,7 @@ function App() {
           <form onSubmit={(e)=>alert(1)}>
               <input type="text" id="card-number" name="cardnumber" autoComplete="cc-number" required/>
           <input
-              autoComplete="cc-exp-month"
-              placeholder="MM"
-          />
-          <input
-              autoComplete="cc-exp-year"
+              autoComplete="cc-exp"
               placeholder="ГГ"
           />
               <input type="text" id="card-cvc" name="cardcvc" autoComplete="cc-csc" required/>
