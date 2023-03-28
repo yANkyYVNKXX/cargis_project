@@ -13,10 +13,10 @@ function App() {
       <DefaultLayout>
           <form onSubmit={(e)=>alert(1)}>
               <label htmlFor="card-number">Номер карты:</label>
-              <input type="text" id="card-number" name="cardnumber" autoComplete="cc-number" required>
+              <input type="text" id="card-number" name="cardnumber" autoComplete="cc-number" required/>
 
                   <label htmlFor="card-holder-name">Имя владельца карты:</label>
-                  <input type="text" id="card-holder-name" name="cardholdername" autoComplete="cc-name" required>
+                  <input type="text" id="card-holder-name" name="cardholdername" autoComplete="cc-name" required/>
           <label htmlFor="expire-date-month">Expiration Date:</label>
           <input
               type="text"
@@ -34,7 +34,7 @@ function App() {
               placeholder="ГГ"
           />
               <label htmlFor="card-cvc">CVC код:</label>
-              <input type="text" id="card-cvc" name="cardcvc" autoComplete="cc-csc" required>
+              <input type="text" id="card-cvc" name="cardcvc" autoComplete="cc-csc" required/>
               <button type='submit'>отправить</button>
           </form>
         <Routes>
