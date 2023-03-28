@@ -11,6 +11,22 @@ function App() {
   return (
     <div className="App">
       <DefaultLayout>
+          <label htmlFor="expire-date-month">Expiration Date:</label>
+          <input
+              type="text"
+              name="expire-date-month"
+              id="expire-date-month"
+              autoComplete="cc-exp-month"
+              placeholder="MM"
+          />
+          <label htmlFor="expire-date-year">Expiration Date:</label>
+          <input
+              type="text"
+              name="expire-date-year"
+              id="expire-date-year"
+              autoComplete="cc-exp-year"
+              placeholder="ГГ"
+          />
         <Routes>
           {PublicRoutes.map(({path, element}) => (
             <Route path={path} element={element} />
